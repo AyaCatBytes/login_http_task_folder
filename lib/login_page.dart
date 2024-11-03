@@ -16,7 +16,7 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
-  Crud _crud=Crud();
+  final Crud _crud=Crud();
   TextEditingController userNameControler = TextEditingController();
   TextEditingController passwordControler = TextEditingController();
 
@@ -74,7 +74,7 @@ class _LoginPageState extends State<LoginPage> {
             //button sign in number 1
             SizedBox(height: 15),
             Padding(
-              padding: const EdgeInsets.only(left: 4, top: 15, right: 20),
+              paddinaya g: const EdgeInsets.only(left: 4, top: 15, right: 20),
               child: FilledButton(
                 style: FilledButton.styleFrom(
                   backgroundColor: buttonColor,
@@ -95,7 +95,7 @@ class _LoginPageState extends State<LoginPage> {
                     showDialog<String>(
                         context: context,
                         builder: (BuildContext context) => AlertDialog(
-                            title:  Text("Error"),
+                            title:  Text("success"),
                             content:  Text(login)));
 
 
@@ -161,8 +161,8 @@ class _LoginPageState extends State<LoginPage> {
                     showDialog<String>(
                         context: context,
                         builder: (BuildContext context) => AlertDialog(
-                            title:  Text("Error"),
-                            content:  Text(deleteAct)));
+                            title:  Text("success"),
+                            content:  Text("account deleted")));
 
 
                   }else{
@@ -170,7 +170,7 @@ class _LoginPageState extends State<LoginPage> {
                         context: context,
                         builder: (BuildContext context) => AlertDialog(
                             title:  Text("Error"),
-                            content:  Text(login)));
+                            content:  Text(deleteAct)));
 
 
 

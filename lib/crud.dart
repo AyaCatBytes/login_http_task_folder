@@ -101,7 +101,7 @@ class Crud{
 
   //delete opration
 
-//update opration
+
 
   Future DeleteAcount(String url) async{
 
